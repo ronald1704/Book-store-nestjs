@@ -6,9 +6,10 @@ import { DatabaseModule } from './database/database.module';
 import { UserModule } from './modules/user/user.module';
 import { RolModule } from './modules/role/rol.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { BookModule } from './modules/book/book.module';
 
 @Module({
-  imports: [ConfigModule, DatabaseModule, UserModule, RolModule, AuthModule],
+  imports: [ConfigModule, DatabaseModule, UserModule, RolModule, AuthModule, BookModule],
 })
 export class AppModule {
   static port: number | string;

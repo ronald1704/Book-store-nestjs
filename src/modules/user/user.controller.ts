@@ -21,7 +21,7 @@ export class UserController {
         return this._userService.get(userId);
     }
 
-    @UseGuards(AuthGuard())
+    //@UseGuards(AuthGuard())
     @Get()
     getUsers(): Promise<ReadUserDto[]> {
         return this._userService.getAll();
